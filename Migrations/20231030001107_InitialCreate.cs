@@ -20,7 +20,8 @@ namespace CourseCatalog.Migrations
                     CourseName = table.Column<string>(type: "TEXT", nullable: true),
                     CourseDescription = table.Column<string>(type: "TEXT", nullable: true),
                     RoomNumber = table.Column<int>(type: "INTEGER", nullable: false),
-                    StartTime = table.Column<TimeOnly>(type: "TEXT", nullable: false)
+                    StartTime = table.Column<TimeOnly>(type: "TEXT", nullable: false),
+                    EndTime = table.Column<TimeOnly>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
